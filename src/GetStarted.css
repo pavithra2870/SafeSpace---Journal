@@ -1,0 +1,82 @@
+/* src/components/GetStarted.css */
+
+/* --- Cleaned up Button Style --- */
+.get-started-btn {
+    font-family: 'Handlee', cursive;
+    color: #5d4037; /* A softer brown */
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 220px;
+    padding: 0.5rem 1rem;
+    background-color: #fce4ec; /* Light baby pink */
+    border: 2px solid #f8bbd0;
+    border-radius: 9999px; /* full rounded */
+    box-shadow: 0 8px 15px rgba(244, 143, 177, 0.3);
+    cursor: pointer;
+    transform: translateY(0);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .get-started-btn:hover {
+    background-color: #f8bbd0;
+    box-shadow: 0 12px 20px rgba(244, 143, 177, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  /* --- Horizontal Scrolling Showcase Container --- */
+  .showcase-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem; /* Space between cards */
+    width: 100%;
+    max-width: 90vw;
+    padding: 1rem;
+    overflow-x: auto; /* This enables horizontal scrolling */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+  }
+  
+  /* Hides scrollbar for Chrome, Safari, and Opera */
+  .showcase-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* --- Individual Journal Card --- */
+  .journal-card {
+    flex: 0 0 320px; /* Each card will be 320px wide and won't shrink */
+    display: flex;
+    flex-direction: column; /* This ensures elements inside stack vertically */
+    justify-content: space-between;
+    height: 280px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .journal-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .journal-entry-content {
+    padding: 1.5rem;
+    font-family: 'Handlee', cursive;
+    background-image: repeating-linear-gradient(to bottom, #fdfdfd 0px, #fdfdfd 29px, #d1d5db 30px);
+    background-size: 100% 30px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* --- SereneAI Response Box --- */
+  .serene-ai-response {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(9, 9, 9);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  

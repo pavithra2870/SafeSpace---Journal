@@ -1,0 +1,86 @@
+/* src/components/ActivityHeatmap.css */
+
+.heatmap-container {
+    padding: 1.5rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* --- THE FIX: Header grid for months --- */
+  .heatmap-months {
+    display: grid;
+    grid-template-columns: repeat(53, 1fr); /* 52-53 weeks in a year */
+    grid-auto-flow: column;
+    gap: 3px;
+    padding-left: 2.5rem; /* Align with the cells grid */
+    margin-bottom: 0.25rem;
+    font-size: 0.7rem;
+    color: #8c5d6e; /* A soft, thematic color */
+  }
+  
+  .heatmap-month {
+    grid-column-end: span 4; /* Each month label spans roughly 4-5 weeks */
+    text-align: left;
+    white-space: nowrap; /* Prevents the month name from wrapping */
+  }
+  
+  .heatmap-body {
+    display: flex;
+  }
+  
+  .heatmap-weekdays {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 3px;
+    width: 2.5rem; /* Fixed width for weekday labels */
+    font-size: 0.7rem;
+    color: #8c5d6e;
+    text-align: right;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .heatmap-grid {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: column;
+    gap: 1px;
+    width: 100%;
+  }
+  
+  .heatmap-cell {
+    aspect-ratio: 1 / 1; /* Ensures cells are always square */
+    min-width: 12px;
+    border-radius: 3px;
+    position: relative;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  /* --- Tooltip and Hover Effect --- */
+  .heatmap-cell:hover {
+    transform: scale(1.3);
+    z-index: 10;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  
+  .heatmap-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    transition: opacity 0.2s, visibility 0.2s;
+    pointer-events: none;
+  }
+  
+  .heatmap-cell:hover .heatmap-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  

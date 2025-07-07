@@ -1,0 +1,676 @@
+/* Enhanced Manifestations Styles */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Handlee&display=swap');
+
+.manifestations-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdf2f8 0%, #ecfdf5 100%);
+  padding: 2rem;
+}
+
+/* Manifestations Header */
+.manifestations-header {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.manifestations-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ec4899, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.title-icon {
+  font-size: 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.manifestations-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.header-stats {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(16, 185, 129, 0.1));
+  border: 1px solid rgba(236, 72, 153, 0.2);
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.2);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Manifestations Content */
+.manifestations-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Sidebar */
+.manifestations-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-section {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.1);
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: 1px solid rgba(236, 72, 153, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+.category-item:hover {
+  background: rgba(236, 72, 153, 0.1);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.15);
+}
+
+.category-item.active {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(16, 185, 129, 0.2));
+  border-color: rgba(236, 72, 153, 0.3);
+  color: #ec4899;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
+}
+
+.category-icon {
+  font-size: 1.1rem;
+}
+
+.category-name {
+  font-size: 0.9rem;
+}
+
+.sort-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sort-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: 1px solid rgba(236, 72, 153, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.sort-option:hover {
+  background: rgba(236, 72, 153, 0.1);
+  transform: translateX(4px);
+}
+
+.sort-option.active {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(16, 185, 129, 0.2));
+  border-color: rgba(236, 72, 153, 0.3);
+  color: #ec4899;
+}
+
+.sort-icon {
+  font-size: 1rem;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tip-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: rgba(236, 72, 153, 0.05);
+}
+
+.tip-icon {
+  font-size: 1rem;
+}
+
+.tip-text {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Main Content */
+.manifestations-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Create Manifestation Section */
+.create-manifestation-section {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.1);
+}
+
+.create-manifestation-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.create-manifestation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.manifestation-input {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(236, 72, 153, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.manifestation-input:focus {
+  outline: none;
+  border-color: #ec4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+  transform: translateY(-1px);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.category-select,
+.priority-select {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(236, 72, 153, 0.2);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.category-select:focus,
+.priority-select:focus {
+  outline: none;
+  border-color: #ec4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.char-count {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.submit-manifestation-btn {
+  background: linear-gradient(135deg, #ec4899, #10b981);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+}
+
+.submit-manifestation-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(236, 72, 153, 0.4);
+}
+
+.btn-icon {
+  font-size: 1rem;
+}
+
+/* Manifestations List Section */
+.manifestations-list-section {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(236, 72, 153, 0.1);
+}
+
+.manifestations-count {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 500;
+  background: rgba(236, 72, 153, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.manifestations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.manifestation-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(236, 72, 153, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.manifestation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ec4899, #10b981);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.manifestation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.15);
+  border-color: rgba(236, 72, 153, 0.2);
+}
+
+.manifestation-card:hover::before {
+  opacity: 1;
+}
+
+.manifestation-card.fulfilled {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(16, 185, 129, 0.05));
+}
+
+.manifestation-card.fulfilled::before {
+  background: linear-gradient(90deg, #10b981, #059669);
+  opacity: 1;
+}
+
+.manifestation-content {
+  margin-bottom: 1rem;
+}
+
+.manifestation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.manifestation-info {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.category-badge {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(16, 185, 129, 0.1));
+  color: #ec4899;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.priority-badge {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.manifestation-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.manifestation-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #db2777;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.manifestation-text.strikethrough {
+  text-decoration: line-through;
+  color: #6b7280;
+  opacity: 0.7;
+}
+
+.fulfillment-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.fulfillment-icon {
+  font-size: 1rem;
+}
+
+.fulfillment-text {
+  font-size: 0.85rem;
+  color: #059669;
+  font-weight: 600;
+}
+
+.manifestation-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid rgba(236, 72, 153, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.15);
+}
+
+.action-btn.fulfill-btn.fulfilled {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #059669;
+}
+
+.action-btn.delete-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #dc2626;
+}
+
+.action-icon {
+  font-size: 1.1rem;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6b7280;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.empty-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.empty-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 1rem;
+}
+
+.loading-text {
+  font-size: 1.1rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .manifestations-content {
+    grid-template-columns: 250px 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .manifestations-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .manifestations-sidebar {
+    order: 2;
+  }
+  
+  .manifestations-main {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .manifestations-container {
+    padding: 1rem;
+  }
+  
+  .manifestations-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .header-stats {
+    justify-content: center;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .submit-manifestation-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .manifestation-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .manifestation-info {
+    justify-content: flex-start;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Shimmer Effect for Cards */
+.manifestation-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s ease;
+}
+
+.manifestation-card:hover::after {
+  left: 100%;
+} 

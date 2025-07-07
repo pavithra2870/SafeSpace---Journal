@@ -1,0 +1,82 @@
+/* Add these new styles to your existing Community.css */
+
+/* --- Search Bar --- */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    color: #a78bfa; /* a soft purple */
+    font-size: 1rem;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 10px 10px 36px;
+    border-radius: 12px;
+    border: 1px solid #ddd6fe;
+    background-color: #f5f3ff;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+  }
+  
+  /* --- Filter Buttons --- */
+  .filter-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .filter-option {
+    flex-grow: 1;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #fce7f3; /* light pink */
+    color: #db2777; /* darker pink */
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-option:hover {
+    background-color: #fbcfe8;
+  }
+  
+  .filter-option.active {
+    background-color: #db2777;
+    color: white;
+    border-color: #db2777;
+  }
+  
+  /* Post Card Actions (Edit/Delete) */
+  .post-card-actions {
+      display: flex;
+      gap: 8px;
+  }
+  
+  .card-action-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #9ca3af;
+      transition: color 0.2s;
+  }
+  
+  .card-action-btn:hover {
+      color: #be185d;
+  }
+  
