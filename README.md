@@ -4,7 +4,7 @@ Welcome to **SafeSpace**, your cozy, modern, and data-driven journaling platform
 
 ---
 
-## 🌸 Features
+##  Features
 
 - **User Authentication**: Secure signup/login with JWT.
 - **Personal Dashboard**: Visual stats, streaks, mood/happiness charts, activity heatmap, and calendar.
@@ -18,7 +18,7 @@ Welcome to **SafeSpace**, your cozy, modern, and data-driven journaling platform
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: React, Recharts, React Calendar, Tailwind/CSS
 - **Backend**: Node.js, Express, MongoDB, Mongoose
@@ -27,7 +27,7 @@ Welcome to **SafeSpace**, your cozy, modern, and data-driven journaling platform
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. **Clone the Repository**
 
@@ -74,7 +74,7 @@ npm start
 
 ---
 
-## 📝 Usage Guide
+##  Usage Guide
 
 1. **Sign Up / Log In**: Create your account or log in to access your dashboard.
 2. **Dashboard**: View your stats, streaks, mood/happiness charts, activity heatmap, and calendar.
@@ -87,31 +87,12 @@ npm start
 
 ---
 
-## 💡 Tips & Best Practices
-
-- **Consistency is key!** Write daily to build your streak and unlock new achievements.
-- **Use affirmations and manifestations** to stay positive and focused.
-- **Check your insights** regularly to spot trends and improve your well-being.
-- **Engage with the community** for support and inspiration.
-
----
-
-## 🤖 AI & LLM Integration
+##  AI & LLM Integration
 
 - The backend integrates with LangChain, Groq, and langchain-groq for AI chat and insights.
-- Make sure to provide any required API keys in your `config.env`.
-
 ---
 
-## 🛠️ Development & Contribution
-
-- Fork the repo and create a new branch for your feature or bugfix.
-- Submit a pull request with a clear description.
-- Please follow the existing code style and add comments where helpful.
-
----
-
-## 📦 Project Structure
+##  Project Structure
 
 ```
 Journal/
@@ -135,15 +116,4 @@ Journal/
     start-app.js     # (Optional) Custom start script
 ```
 
----
-
-## 🧑‍💻 Authors & Credits
-
 - Designed & developed by Pavithra
-- Special thanks to all contributors and the open-source community!
-
----
-
-## 🛡️ License
-
-This project is licensed under the MIT License.
